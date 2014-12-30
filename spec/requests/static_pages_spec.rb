@@ -9,7 +9,7 @@ describe "Static Pages" do
     end
     it "should have the right title 'Home'" do
       visit '/staticpages/home'
-      page.should have_selector('title', :text => 'Ruby on Rails Tutorial Sample App | Home')
+      page.should have_selector('title', :text => 'Ruby on Rails Tutorial Sample App')
     end
   end
 
@@ -20,7 +20,7 @@ describe "Static Pages" do
     end
     it "should have the right title 'Help'" do
       visit '/staticpages/help'
-      page.should have_selector('title', :text => 'Ruby on Rails Tutorial Sample App | Help')
+      page.should have_selector('title', :text => 'Ruby on Rails Tutorial Sample App')
     end
   end
 
@@ -31,7 +31,7 @@ describe "Static Pages" do
     end
     it "should have the right title 'About Us'" do
       visit '/staticpages/about'
-      page.should have_selector('title', :text => 'Ruby on Rails Tutorial Sample App | About Us')
+      page.should have_selector('title', :text => 'Ruby on Rails Tutorial Sample App')
     end
   end
 
