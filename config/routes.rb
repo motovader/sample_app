@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'staticpages/home'
-
+  get 'staticpages/about'
   get 'staticpages/help'
 
   # The priority is based upon order of creation: first created -> highest priority.
