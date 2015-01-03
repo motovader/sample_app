@@ -5,7 +5,10 @@ class StaticpagesController < ApplicationController
   def help
   end
 
-  def About
+  def about
+  end
+
+  def contacts
   end
 
 end
