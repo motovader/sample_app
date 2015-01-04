@@ -1,10 +1,13 @@
-Rails.application.routes.draw do
-  match '/help', to: 'staticpages#help', via: :get
-  match '/about', to: 'staticpages#about', via: :get
-  match '/contacts', to: 'staticpages#contacts', via: :get
+#Rails.application.routes.draw do
+SampleApp::Application.routes.draw do
+  root to: 'staticpages#home'
+  match '/help', to: 'staticpages#help', via: :all
+  match '/about', to: 'staticpages#about', via: :all
+  match '/contacts', to: 'staticpages#contacts', via: :all
 
-  root to: 'staticpages#home', via: :get
 
+
+# started with these before using match . . .
 #  get 'staticpages/home'  
 #  get 'staticpages/about'
 #  get 'staticpages/contacts'
