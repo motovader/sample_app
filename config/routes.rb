@@ -1,9 +1,15 @@
 #Rails.application.routes.draw do
+#  get 'users/new'
+
 SampleApp::Application.routes.draw do
+  get 'users/new'
+
   root to: 'staticpages#home'
+  match '/signup', to: 'users#new', via: :all  
   match '/help', to: 'staticpages#help', via: :all
   match '/about', to: 'staticpages#about', via: :all
   match '/contacts', to: 'staticpages#contacts', via: :all
+
 
 
 
